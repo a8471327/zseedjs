@@ -1,0 +1,313 @@
+@charset "UTF-8";
+html,body,ul,ol,li,table,div,p,input{margin: 0;padding: 0;}
+body{font-family: Arial, Roboto, 'Droid Sans', 'Hiragino Sans GB', 'Microsoft YaHei', 'Simsun', STXihei, 'sans-serif';}
+a, a:hover{text-decoration: none;color: #000;}
+ul,ol,li{list-style: none;}
+a:focus,input,textarea{outline-style:none;}
+/*清除浮动*/
+.clearfix::after{clear: both;display: block;height: 0;visibility: hidden;content: "";}
+.clearfix{zoom: 1;}
+
+/*modal*/
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+.modal-dialog {
+  position: relative;
+  width: 900px;
+  margin: 50px auto;
+}
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 6px;
+  outline: 0;
+  -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+  box-shadow: 0 3px 9px rgba(0,0,0,.5);
+}
+.modal-header {
+  min-height: 16.43px;
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.modal-header .close {
+  margin-top: -2px;
+}
+button.close {
+  -webkit-appearance: none;
+  padding: 0;
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+}
+.close {
+  float: right;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: .2;
+}
+.close:focus, .close:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+.modal-title {
+  margin: 0;
+  line-height: 1.42857143;
+}
+.modal-body {
+  position: relative;
+  padding: 15px;
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+
+/*dropdown*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown>a {
+  position: relative;
+  display: block;
+  border-radius: 4px;
+  padding: 10px 15px;
+}
+.dropdown>a:hover {
+  text-decoration: none;
+  background-color: #eee;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+.dropdown-menu>li>a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+  color: #262626;
+  text-decoration: none;
+  background-color: #f5f5f5;
+}
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-top: 4px solid\9;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+/*tab*/
+.tab{
+	position: relative;
+	width: 100%;
+	min-height: 250px;
+	margin: 50px auto 0;
+	border-top: 1px solid #ccc;
+}
+.tab-title{
+	position: absolute;
+	top: -43px;
+	left: 10px;
+}
+.tab-title li{
+	width: 80px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	list-style: none;
+	display: inline-block;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	border-bottom-color: transparent;
+	background-color: #fff;
+	border-top-left-radius: 8px;
+  	border-top-right-radius: 8px;
+}
+.tab .active{
+	height: 41px;
+}
+.tab-content .content{
+	display: none;
+	height: 100%;
+	background-color: #fff;
+}
+/*collapse*/
+.collapse-group .collapse+.collapse{
+    margin-top: 5px;
+}
+.collapse{
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+.collapse-title{
+    padding: 10px 15px;
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+    cursor: pointer;
+}
+.collapse-content{
+    display: none;
+    border-top: 1px solid #ddd;
+    padding: 15px;
+}
+/*carousel*/
+.carousel {
+  position: relative;
+}
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+}
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000\9;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+.carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #fff;
+}
+.carousel-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.carousel-img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 10000px;
+}
+.carousel-img img{
+    float: left;
+}
+.carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    filter: alpha(opacity=50);
+    opacity: .5;
+    cursor: pointer;
+}
+.carousel-control.next {
+    right: 0;
+    left: auto;
+}
+.carousel-control span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -28px;
+    margin-left: -15px;
+}
+.carousel-control:hover{
+    opacity: .8;
+    filter: alpha(opacity=80);
+    color: #fff;
+}
+/*searchSelect*/
+.searchSelect{
+    width: 100%;
+    height: 18px;
+    line-height: 18px;
+    padding: 4px 6px;
+}
+.searchSelect-option{
+    position: absolute;
+    display: none;
+    max-height: 150px;
+    border: 1px solid #ccc;
+    border-top: 0;
+    padding: 1px;
+    overflow-y: auto;
+    background-color: #fff;
+}
+.searchSelect-option a {
+    display: block;
+    height: 18px;
+    line-height: 18px;
+    padding: 4px 6px;
+}
+.searchSelect-option a:hover{
+    background-color: #1E90FF;
+}

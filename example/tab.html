@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>tab</title>
+<link rel="stylesheet" type="text/css" href="../dist/css/zseed.min.css">
+</head>
+<body>
+<div class="tab" id="myTab">
+	<ul class="tab-title">
+		<li>tab1</li>
+		<li>tab2</li>
+		<li>tab3</li>
+	</ul>
+	<div class="tab-content">
+    	<div class="content">
+    		content1
+    	</div>
+    	<div class="content">
+    		content2
+    	</div>
+    	<div class="content">
+    		content3
+    	</div>
+	</div>
+</div>
+
+<div class="tab" id="myTab2">
+	<ul class="tab-title">
+		<li>tab1</li>
+		<li>tab2</li>
+		<li>tab3</li>
+	</ul>
+	<div class="tab-content">
+    	<div class="content">
+    		content1
+    	</div>
+    	<div class="content">
+    		content2
+    	</div>
+    	<div class="content">
+    		content3
+    	</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../dist/js/zseed.min.js"></script>
+<script type="text/javascript">
+window.onload = function(){
+	ZS.tab('myTab').tab('myTab2');
+};
+</script>
+</body>
+</html>

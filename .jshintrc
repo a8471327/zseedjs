@@ -1,0 +1,75 @@
+{
+    "predef": [
+         "console"
+    ],
+	"sub": true,
+    "browser" : true,
+    "asi": false,
+    "eqeqeq": false,
+    "node" : true
+}
+
+
+/*{
+    "globals": {
+        "jasmine": false,
+        "spyOn": false,
+        "it": false,
+        "console": false,
+        "describe": false,
+        "expect": false,
+        "beforeEach": false,
+        "waits": false,
+        "waitsFor": false,
+        "runs": false
+    },
+
+    "node" : true,
+    "es5" : true,
+    "browser" : true,
+
+    "boss": false,
+    "evil": true,//是否允许使用eval
+    "forin": false,//在 for in 循环中是否可以不出现 hasOwnProperty
+    "immed": true,
+    "laxbreak": false,//是否不检查换行
+    "newcap": true,//构造函数是否大写开头
+    "noempty": false,//是否禁止出现空代码块（没有语句的代码块），true == 禁用构造器
+    "nonew": false,
+    "nomen": false,//是否禁用下划线的变量名
+    "onevar": true,//是否检测函数只被 var 声明一遍
+    "plusplus": false,//是否禁用自增运算++和自减运算--
+    "regexp": false,//是否不允许使用 . 和 [^...] 的正则
+    "undef": true,//是否检查变量未定义
+    "sub": true,//是否允许各种形式下标来访问对象
+    "strict": false,//是否使用严格模式
+    "white": true,//是否依据严格的空白规范检查代码
+    "unused": false,//是否检查变量未使用
+
+    "maxcomplexity": true,//复杂度检测
+    "maxparams": 4,//参数个数阈值
+    "maxdepth": 4,//嵌套深度阈值
+    "最大行数": 1000,//代码行数阈值
+    "eqeqeq": true,//是否强制使用===或!==
+    "curly": true,//结构语句是否必须使用{}
+    "noarg": true,//是否禁止 arguments.caller 和 arguments.callee 的使用
+
+    "devel": true,//检查用于调试的全局变量：console、alert
+    "debug": false,//是否允许出现debugger语句
+
+    "notypeof": true,//检查无效的 typeof 操作符值
+    "multistr": true,//检查多行字符串
+    "loopfunc": true,//检查循环内嵌套 function
+    "laxcomma": true,//检查不安全的折行，忽略逗号在最前面的编程风格
+    "lastsemic": true,//检查一行代码最后声明后面的分号是否遗漏
+    "quotmark": false,//是否禁止单双引号混用
+    "latedef": "nofunc",//禁止定义之前使用变量，忽略 function 函数声明
+    "indent": true,//是否检查代码缩进
+    "asi": false,//是否无视分号
+    "bitwise": true,//是否禁用位运算符
+    "eqnull": true,//是否允许使用 ==null 进行比较
+    "maxerr": 20,//错误数量阈值，超出时jsHint不再向下检查并且提示错误太多
+    "passfail": false,//是否在首次发现错误后停止检查
+    "es3": true,//是否兼容ES3的低级浏览器 IE 6/7/8/9
+    "freeze": true//是否禁止重写原生对象的原型
+}*/

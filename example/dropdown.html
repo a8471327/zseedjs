@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>dropdown</title>
+<link rel="stylesheet" type="text/css" href="../dist/css/zseed.min.css">
+</head>
+<body>
+<div class="dropdown" id="myDropdown">
+	<a href="#" class="dropdown-btn">
+		Dropdown test
+		<span class="caret"></span>
+	</a>
+	<ul class="dropdown-menu">
+		<li><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+	</ul>
+</div>
+
+<script type="text/javascript" src="../dist/js/zseed.min.js"></script>
+<script type="text/javascript">
+window.onload = function(){
+	ZS.dropdown('myDropdown');
+};
+</script>
+</body>
+</html>

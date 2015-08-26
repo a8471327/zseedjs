@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>searchSelect</title>
+<link rel="stylesheet" type="text/css" href="../dist/css/zseed.min.css">
+<style type="text/css">
+.wrapper{
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+    <input type="text" id="mySearchSelect">
+    <br>
+    <br>
+    <input type="text" id="mySearchSelect2">
+</div>
+<script type="text/javascript" src="../dist/js/zseed.min.js"></script>
+<script type="text/javascript">
+window.onload = function(){
+	var data = [];
+	for(var i = 1; i < 100; i++){//模拟数据
+		data.push(i+"");
+	}
+	ZS.searchSelect({
+        id: 'mySearchSelect',
+        data: data
+    }).searchSelect({
+        id: 'mySearchSelect2',
+        data: ['sadly', '收到了', '王企鹅哦', '亲生的健康', '阿苏为空']
+    });
+};
+</script>
+</body>
+</html>
